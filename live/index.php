@@ -31,9 +31,9 @@
     <script>
     
         $(function(){
-          $('#container').masonry({
+          $('#prod-container').masonry({
             // options
-            itemSelector : '.item',
+            itemSelector : '.prod-item',
             columnWidth : 310
           });
         });
