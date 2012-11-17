@@ -57,7 +57,7 @@
                         
                         	}
                         ?>
-                        <form action="index.html" class="form-horizontal" method="post">
+                        <form action="#" class="form-horizontal" method="post">
                             <input type="email" name="email" placeholder="Enter your email" class="input-large" />
                             <input type="submit" value="Notify me!" class="btn btn-large" />
                         </form>
