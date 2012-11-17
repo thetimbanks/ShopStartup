@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Shop Startup</title>
+    <title>Shop Startup: For Businesses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -26,20 +26,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script src="js/jquery.masonry.min.js"></script>
-    <script>
-    
-        $(function(){
-          $('#prod-container').masonry({
-            // options
-            itemSelector : '.prod-item',
-            columnWidth : 310
-          });
-        });
-    
-    </script>
-
   </head>
 
   <body>
@@ -66,7 +52,7 @@
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -82,7 +68,7 @@
                   <li><a href="#">One more separated link</a></li>-->
                 </ul>
               </li>
-              <li><a href="#about">For Businesses</a></li>
+              <li class="active"><a href="#about">For Businesses</a></li>
               <li><a href="#about">About Us</a></li>
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
             </ul>
@@ -108,19 +94,9 @@
           <img src="img/largegraphic1.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Shop Startup connects you to the hottest startups with unique holiday gifts.</h1>
+              <h1>You know your product.<br />
+              		We know how to get it out there.</h1>
               <!--<p class="lead">Test</p>-->
-              <!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/largegraphic2.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-               <h1>This holiday,<br />do more than shop.<br />Shop <em>Startup</em>.</h1>
-              <!--<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>-->
             </div>
           </div>
         </div>
@@ -136,37 +112,6 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-    
-    	<h2><strong>Featured Products</strong></h2>
-        
-        <div class="centered">
-            <div id="prod-container">
-            
-            <?php
-            
-				$query1 = "SELECT * FROM `products` ORDER BY `dtadded` DESC";
-				if($result1 = $db['link']->query($query1)){
-            		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
-            ?>
-            
-                <div class="prod-item">image
-                    <div class="prod-itemlabel">
-                        <h4><? echo $row1['productname']; ?></h4>
-                        <strong><? echo $row1['companyname']; ?></strong>
-                        <br />
-                        <? echo $row1['productdesc']; ?>
-                    </div>
-                </div>
-            
-            <?php
-					}
-				}
-			?>
-
-            </div>
-        </div>
-
-    	<div class="spacer"></div>
     
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -248,13 +193,5 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
   </body>
 </html>
