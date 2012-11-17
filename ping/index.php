@@ -3,7 +3,7 @@
 	// Asynchronous purchase log page
 	
 	// Connect to DB
-	require '../config.php';
+	require '../live/config.php';
 	
 	$cookie = "sample-cookie";
 	
