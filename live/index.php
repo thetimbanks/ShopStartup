@@ -1,4 +1,4 @@
-
+<?php require 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -137,11 +137,25 @@
     <div class="container marketing">
         <div class="centered">
             <div id="prod-container">
+            
+            <?php
+            
+				$query1 = "SELECT * FROM `products` ORDER BY `dtadded` DESC";
+				if($result1 = $db['link']->query($query1)){
+            		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
+            ?>
+            
                 <div class="prod-item">image
                     <div class="prod-itemlabel">
-                        caption
+                        <h1><? echo $row1['productname']; ?></h1>
                     </div>
                 </div>
+            
+            <?php
+					}
+				}
+			?>
+            
                 <div class="prod-item">b<br />sdhflkjh<br />sdhflkjh<br />sdhflkjh<br />sdhflkjh<br />sdhflkjh</div>
                 <div class="prod-item">c</div>
                 <div class="prod-item">d</div>
