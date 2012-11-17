@@ -147,7 +147,7 @@
             
                 <div class="prod-item">image
                     <div class="prod-itemlabel">
-                        <h1><? echo $row1['productname']; ?></h1>
+                        <h4><? echo $row1['productname']; ?></h4>
                     </div>
                 </div>
             
@@ -155,10 +155,7 @@
 					}
 				}
 			?>
-            
-                <div class="prod-item">b<br />sdhflkjh<br />sdhflkjh<br />sdhflkjh<br />sdhflkjh<br />sdhflkjh</div>
-                <div class="prod-item">c</div>
-                <div class="prod-item">d</div>
+
             </div>
         </div>
 
