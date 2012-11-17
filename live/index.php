@@ -138,6 +138,8 @@
     
     	<h2>Featured Products</h2>
     
+    	<hr class="featurette-divider">
+    
         <div class="centered">
             <div id="prod-container">
             
