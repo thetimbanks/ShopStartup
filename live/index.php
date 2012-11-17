@@ -135,6 +135,9 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
+    
+    	<h2>Featured Products</h2>
+    
         <div class="centered">
             <div id="prod-container">
             
