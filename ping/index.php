@@ -4,7 +4,7 @@
 	header('Access-Control-Allow-Origin: *');
 	
 	// Connect to DB
-	require '../config.php';
+	require '../live/config.php';
 	
 	$cookie = $_COOKIE["ss_user_tracker"];
 	
