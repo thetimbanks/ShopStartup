@@ -1,11 +1,12 @@
 <?php
 
 	// Asynchronous purchase log page
+	header('Access-Control-Allow-Origin: *');
 	
 	// Connect to DB
 	require '../config.php';
 	
-	$cookie = "sample-cookie";
+	$cookie = $_COOKIE["ss_user_tracker"];
 	
 	// Add record to DB
 	$query1 = "INSERT INTO `purchases` SET `session` = '" .$cookie. "', `datetime` = '" .$cfg['sqltime']. "'";
