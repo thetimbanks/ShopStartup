@@ -44,7 +44,7 @@
                 <div class="span12">
                     <div class="content">
                         <img src="img/logo.png" width="450" height="100" />
-                        <h1>Shop Startup connects you to the hottest startups with unique holiday gifts.</h1>
+                        <h1>Shop Startup connects you<br />to the hottest startups<br />with unique holiday gifts.</h1>
                         <p>Shop Startup is launching tomorrow!<br />Leave us your email below, and we’ll notify the minute we open the doors.</p>
                         <?php
                         	if($_POST['email']){
