@@ -53,14 +53,17 @@
                                 $query1 = "INSERT INTO `landing` SET `email` = '" .addslashes($_POST['email']). "', `datetime` = '" .$cfg['sqltime']. "'";
                                 $db['link']->query($query1);
                                 
-                                echo "Thank you!<br />We'll be in touch!";
+                                echo "<p>Thank you!<br />We'll be in touch!</p>";
                         
-                        	}
+                        	} else {
                         ?>
                         <form action="#" class="form-horizontal" method="post">
                             <input type="email" name="email" placeholder="Enter your email" class="input-large" />
                             <input type="submit" value="Notify me!" class="btn btn-large" />
                         </form>
+                        <?php
+							}
+						?>
                         <p>
                             <a href="http://twitter.com/shopstartup" class="sb circle twitter mytooltip" title="Twitter" target="_blank">Twitter</a>
                             <a href="http://facebook.com/shopstartup" class="sb circle facebook mytooltip" title="Facebook" target="_blank">Facebook</a>
