@@ -9,9 +9,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/style.css" rel="stylesheet">
     
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -37,7 +37,7 @@
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     
     <div class="centered">
-    	<img src="img/logo.png" width="450" height="100" />
+    	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="450" height="100" />
     </div>
     
     <div class="container navbar-wrapper">
@@ -141,7 +141,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="img/browser-icon-chrome.png">
+        <img class="featurette-image pull-right" src="<?php echo $cfg['weburl']; ?>/img/browser-icon-chrome.png">
         <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -149,7 +149,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-left" src="img/browser-icon-firefox.png">
+        <img class="featurette-image pull-left" src="<?php echo $cfg['weburl']; ?>/img/browser-icon-firefox.png">
         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -157,7 +157,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="img/browser-icon-safari.png">
+        <img class="featurette-image pull-right" src="<?php echo $cfg['weburl']; ?>/img/browser-icon-safari.png">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -180,18 +180,18 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/jquery.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-transition.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-alert.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-modal.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-dropdown.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-scrollspy.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-tab.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-tooltip.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-popover.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-button.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-collapse.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-carousel.js"></script>
+    <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-typeahead.js"></script>
   </body>
 </html>
