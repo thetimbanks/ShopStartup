@@ -149,6 +149,8 @@
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
                         <strong><? echo $row1['companyname']; ?></strong>
+                        <br />
+                        <? echo $row1['productdesc']; ?>
                     </div>
                 </div>
             
