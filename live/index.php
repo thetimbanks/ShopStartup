@@ -82,6 +82,7 @@
                   <li><a href="#">One more separated link</a></li>-->
                 </ul>
               </li>
+              <li><a href="#about">For Businesses</a></li>
               <li><a href="#about">About Us</a></li>
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
             </ul>
@@ -137,9 +138,7 @@
     <div class="container marketing">
     
     	<h2>Featured Products</h2>
-    
-    	<hr class="featurette-divider">
-    
+        
         <div class="centered">
             <div id="prod-container">
             
