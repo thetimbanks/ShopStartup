@@ -68,7 +68,7 @@
                   <li><a href="#">One more separated link</a></li>-->
                 </ul>
               </li>
-              <li class="active"><a href="<? echo $cfg['weburl']; ?>/businesses">For Startups</a></li>
+              <li><a href="<? echo $cfg['weburl']; ?>/businesses">For Startups</a></li>
               <li><a href="#about">About Us</a></li>
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
             </ul>
@@ -86,24 +86,6 @@
 
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="<?php echo $cfg['weburl']; ?>/img/largegraphic1.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>You know your product.<br />
-              		We know how to get it out there.</h1>
-              <!--<p class="lead">Test</p>-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
 
 
 
