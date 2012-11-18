@@ -76,7 +76,7 @@
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1>
                             
-                            <div class="row">
+                            <div class="row" style="margin-left:0px;">
                             	<div class="span6">
                                     <!-- Facebook Like Button -->
                                     <div class="fb-like" 
