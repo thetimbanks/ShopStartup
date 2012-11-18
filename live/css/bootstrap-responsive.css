@@ -116,6 +116,13 @@
   .navbar-fixed-bottom .container {
     width: 1170px;
   }
+  
+  .carousel {
+    width: 1210px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
   .span12 {
     width: 1170px;
   }

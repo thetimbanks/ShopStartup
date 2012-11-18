@@ -46,6 +46,12 @@
 		display:block;
 		height:85px;	
 	}
+	
+	
+	.carousel img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
 
 
 
@@ -96,11 +102,19 @@
     .carousel {
 	  margin-top:45px;
 
-	  	-moz-box-shadow:    3px 3px 3px 2px #AAA;
-  		-webkit-box-shadow: 3px 3px 3px 2px #AAA;
- 		box-shadow:         3px 3px 3px 2px #AAA;
  		clear: left;
     }
+
+    .about .carousel {
+	  margin-top:95px;
+width: 940px;
+ 		clear: left;
+    }
+    
+    .about .carousel .left, .about .carousel .right, .getlisted .carousel .left, .getlisted .carousel .right {
+	  display: none;
+    }
+
 
     .carousel .container {
       position: absolute;
@@ -218,12 +232,12 @@
         margin: -20px 0;
       }
 
-      .carousel .item {
-        height: 500px;
-      }
+.carousel {
+margin-top: 0;
+}
+      
       .carousel img {
         width: auto;
-        height: 500px;
       }
 
       .featurette {
