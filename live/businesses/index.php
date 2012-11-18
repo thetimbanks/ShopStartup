@@ -68,6 +68,8 @@
 
     <div class="container marketing">
     
+    	<h1>Steps</h1>
+    
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
