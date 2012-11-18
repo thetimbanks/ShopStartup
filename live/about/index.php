@@ -70,7 +70,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2012 Shop Startup &middot; <a href="#">About Us</a></p>
+        <p>&copy; 2012 Shop Startup &middot; <a href="<?= $cfg['weburl']; ?>/about">About Us</a></p>
       </footer>
 
     </div><!-- /.container -->
