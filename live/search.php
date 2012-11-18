@@ -84,7 +84,7 @@
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
                 <div class="prod-item">
                 
-                	<img src="<? echo $row1['image']; ?>" width="290"<? if($row1['height']){ echo " height=\"" .$row1['height']. "\""; } ?> class="prod-image" />
+                	<img src="<?= $cfg['weburl'].$row1['image']; ?>" width="290"<? if($row1['height']){ echo " height=\"" .$row1['height']. "\""; } ?> class="prod-image" />
                     
                     <? if ($row1["tagline"] != "") {?> 
                     	<div class="clearfix">
