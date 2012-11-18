@@ -3193,7 +3193,7 @@ input[type="button"].btn-block {
   background-image: linear-gradient(to bottom, #BF1E2E, #971724);
   background-image: -moz-linear-gradient(top, #BF1E2E, #971724);
   background-repeat: repeat-x;
-  border-color: #0044cc #0044cc #002a80;
+  border-color: #971724 #971724 #971724;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#BF1E2E', endColorstr='#971724', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
