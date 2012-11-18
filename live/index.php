@@ -72,7 +72,7 @@
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
-            <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
+            <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>" style="text-decoration:none;">
                 <div class="prod-item">
                 
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
