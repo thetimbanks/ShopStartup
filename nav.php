@@ -48,7 +48,7 @@
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
             </ul>
           </div><!--/.nav-collapse -->
-          <form action="search.php" method="get">
+          <form action="/search.php" method="get">
               <input type="text" name="q" class="search" value="Search"
                     onfocus="if (this.value=='Search') {this.value = '';}" 
                     onblur="if(this.value=='') {this.value = 'Search';}"
