@@ -292,3 +292,13 @@
     footer {
 	    margin-top: 25px;
     }
+    
+    #buycount {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    background: #000;
+	    color: #fff;
+	    padding: 7px;
+	    font-size: 18px;
+    }

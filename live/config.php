@@ -21,7 +21,7 @@
 	
 	$cfg['pusher_key'] = "af4f0ba396f0d552d1e1";
 	$cfg['pusher_secret'] = "08c13b0ec61e41e826b6";
-	$cfg['pusher_appid'] = "31955";
+	$cfg['pusher_appid'] = 31955;
 	
 	if(!$_COOKIE['ShopStartup']){
 		

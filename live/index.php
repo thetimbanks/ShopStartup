@@ -146,5 +146,28 @@
         })
       }(window.jQuery)
     </script>
+    
+    
+    <?
+    $query3 = "select count(*) as total from `clicks`";
+	if($result3 = $db['link']->query($query3)){
+		while($row3 = $result3->fetch_array(MYSQLI_ASSOC)){
+			$clickcount = $row3['total'];
+			break;
+		}
+	}
+
+    ?>
+    <script src="http://js.pusher.com/1.12/pusher.min.js"></script>
+	<script>
+		pusher = new Pusher('af4f0ba396f0d552d1e1'); // Replace with your app key
+		channel = pusher.subscribe('shopstartup');
+		channel.bind('buy-click', function(data) {
+		  $("#buycount").text(data.count);
+		});
+		$(function() {
+			$("body").append($("<div id='buycount' />").text("<?= $clickcount?>"));
+		})
+	</script>
   </body>
 </html>
