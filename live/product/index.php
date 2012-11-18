@@ -47,7 +47,33 @@
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     
 	<?php nav(); ?>
+   
+               <?php
+                if(is_numeric($_GET['id'])){
+                    $query1 = "SELECT * FROM `products` WHERE `id` LIKE '" .addslashes($_GET['id']). "' LIMIT 1";
+                    if($result1 = $db['link']->query($query1)){
+                        while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
+							
+							if($row1['bannerimg']){
+            ?>
+ 
+    
+      <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="<?= $row1['bannerimg']; ?>" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="color:#000;"><? echo $row1['companyname']; ?></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
 
+				<? } ?>
     
 
 <div class="product-spacer"></div>
@@ -61,12 +87,6 @@
     
     	<div class="clearfix" itemscope itemtype="http://schema.org/Product">
 
-            <?php
-                if(is_numeric($_GET['id'])){
-                    $query1 = "SELECT * FROM `products` WHERE `id` LIKE '" .addslashes($_GET['id']). "' LIMIT 1";
-                    if($result1 = $db['link']->query($query1)){
-                        while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
-            ?>
             <title>Shop Startup: <? echo $row1['productname']; ?></title>
             <div class="row-fluid">
 
@@ -132,11 +152,6 @@
             </div>
             
             
-            <?php
-                        }
-                    }
-                }
-            ?>
             
             
             
@@ -151,6 +166,11 @@
 
 </div><!-- /.container -->
 
+            <?php
+                        }
+                    }
+                }
+            ?>
 
 
     <!-- Le javascript
