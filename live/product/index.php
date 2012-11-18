@@ -80,7 +80,7 @@
                                 <div class="span6">
                                     <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                             	</div>
-                                <div class="span6">
+                                <div class="span6 pull-right">
 									<?php
                                      $protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') 
                                                         === FALSE ? 'http' : 'https';
