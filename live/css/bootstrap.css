@@ -3205,13 +3205,13 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #BF1E2E;
-  *background-color: #BF1E2E;
+  background-color: #971724;
+  *background-color: #971724;
 }
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #BF1E2E \9;
+  background-color: #971724 \9;
 }
 
 .btn-warning {
