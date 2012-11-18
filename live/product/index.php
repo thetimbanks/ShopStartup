@@ -74,7 +74,7 @@
                   <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                            <h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1>
+                            <?php if($row1['price'] != 0.00){ ?><h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1><?php } ?>
                             
                             <div class="row" style="margin-left:0px;">
                                 <div class="span6">
