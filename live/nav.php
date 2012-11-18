@@ -20,9 +20,9 @@
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="<? echo $cfg['weburl']; ?>">Home</a></li>
+              <li><a href="<? echo $cfg['weburl']; ?>">Home</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Discover <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                 	<?php
             
