@@ -110,10 +110,14 @@
                     <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" />
                     </div>
+                    <div class="spacer"></div>
+                    <h2>$ <?php echo number_format($row1['price'],2); ?></h2>
+                    Save / Buy Now
+                    
                	</div>
                 <div class="span8">
                 	<h1><? echo $row1['productname']; ?></h1>
-                    <h4><? echo $row1['companyname']; ?></h4>
+                    <em>by</em> <h4><? echo $row1['companyname']; ?></h4>
                     <p><? echo $row1['productdesc']; ?></p>
                 </div>
             
