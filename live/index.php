@@ -63,7 +63,7 @@
 
     <div class="container featured">
     
-    	<h2><strong>Featured Products</strong></h2>
+    	<h2><strong>Staff Picks</strong></h2>
     	
     	<?php
             
