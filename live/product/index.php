@@ -108,11 +108,14 @@
     
     			<div class="span4">
                     <div class="prod-item">
-                        <img src="<? echo $row1['image']; ?>" class="prod-image" />
+                        <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
+                        <div class="prod-itemlabel">
+                            <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
+                            <a href="#" class="btn">Save</a>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
                     </div>
-                    <br />
-                    <h2>$ <?php echo number_format($row1['price'],2); ?></h2>
-                    Save / Buy Now
+                    
                     
                	</div>
                 <div class="span8">
