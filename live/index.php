@@ -157,7 +157,7 @@
                         <h4><? echo $row1['productname']; ?></h4>
                         <strong><? echo $row1['companyname']; ?></strong>
                         <br />
-                        <? echo $row1['productdesc']; ?>
+                        <? if(strlen($row1['productdesc']) > 140){ echo substr($row1['productdesc'],0,140). "..."; } else { echo $row1['productdesc']; } ?>
                     </div>
                 </div>
             </a>
