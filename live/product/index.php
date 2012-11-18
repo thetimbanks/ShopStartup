@@ -81,10 +81,18 @@
                                     <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                             	</div>
                                 <div class="span6">
-                                <? print_r($_SERVER); ?>
+									<?php
+                                     $protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') 
+                                                        === FALSE ? 'http' : 'https';
+                                        $host     = $_SERVER['HTTP_HOST'];
+                                        $script   = $_SERVER['SCRIPT_NAME'];
+                                        $params   = $_SERVER['QUERY_STRING'];
+                                         
+                                        $currentUrl = $protocol . '://' . $host . $script . '?' . $params; 
+                                    ?>
                                     <!-- Facebook Like Button -->
                                     <div class="fb-like" 
-                                        data-href="<?= $_SERVER['PHP_SELF']; ?>" 
+                                        data-href="<?= $currentUrl; ?>" 
                                         data-send="false" data-layout="button_count" 
                                         data-width="450" 
                                         data-show-faces="false" 
@@ -99,7 +107,7 @@
                                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                                     <br />
                                     <!-- Pin It Button -->
-                                    <a href="http://pinterest.com/pin/create/button/?url=<?= urlencode($_SERVER['PHP_SELF']); ?>&media=<?= urlencode($row1['image']); ?>&description=<?= urlencode($row1['productdesc']); ?>" 
+                                    <a href="http://pinterest.com/pin/create/button/?url=<?= urlencode($currentUrl); ?>&media=<?= urlencode($row1['image']); ?>&description=<?= urlencode($row1['productdesc']); ?>" 
                                     	class="pin-it-button" 
                                         count-layout="horizontal">
                                         	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
