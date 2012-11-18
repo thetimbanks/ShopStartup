@@ -61,28 +61,27 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
-    <div class="container featured">
-    
+    <div class="featured">
+    <div class="container">
     	<h2><strong>Featured Products</strong></h2>
     	
     	<?php
             
-				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 and `featured` like 1 ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 and `redbox` like 1 ORDER BY `sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
-                <div class="prod-item wrapper">
+                <div class="prod-item">
                 
-            <div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
                         <? if(strlen($row1['productdesc']) > 150){ echo substr($row1['productdesc'],0,150). "..."; } else { echo $row1['productdesc']; } ?>
                         <? if($row1['city'] && $row1['state']){ 
-							echo "<br /><small class=\"muted\"><img src=\"" .$cfg['weburl']. "/img/location-pin.png\" /> " .$row1['city']. ", " .$row1['state']. "</small>"; } ?>
+							echo "<br /><a href='#'><small class=\"muted\"><img src=\"" .$cfg['weburl']. "/img/location-pin.png\" /> " .$row1['city']. ", " .$row1['state']. "</small></a>"; } ?>
                     </div>
                 </div>
             </a>
@@ -91,6 +90,7 @@
 					}
 				}
 			?>
+    </div>
     </div>
 
     <!-- Marketing messaging and featurettes
@@ -106,14 +106,16 @@
             
             <?php
             
-				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 AND `featured` != 1 ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 AND `redbox` != 1 ORDER BY `sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
-                <div class="prod-item">
-                
+                <div class="prod-item wrapper"> 
+                	<? if ($row1["ribbon"] == 1) {?> 
+	                	<div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
+	                <? } ?>
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
                     <div class="prod-itemlabel">
