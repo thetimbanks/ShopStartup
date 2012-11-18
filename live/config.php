@@ -16,7 +16,7 @@
 	$cfg['timestamp'] = mktime();
 	$cfg['sqltime'] = strftime("%Y-%m-%d %H:%M:%S",$cfg['timestamp']);
 	
-	$cfg['weburl'] = "http://shopstartup.co/live";
+	$cfg['weburl'] = "http://" .$_SERVER['SERVER_NAME'] . "/live";
 	
 	if(!$_COOKIE['ShopStartup']){
 		
@@ -26,6 +26,5 @@
 	}
 	
 	require 'nav.php';
-
 
 ?>
