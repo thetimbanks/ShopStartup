@@ -109,8 +109,10 @@
     			<div class="span4">
                     <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
-                        <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
-                    Save / Buy Now
+                        <div class="prod-itemlabel">
+                            <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
+                            Save / Buy Now
+                        </div>
                     </div>
                     
                     
