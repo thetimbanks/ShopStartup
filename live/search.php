@@ -49,32 +49,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/largegraphic1.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Shop Startup connects you to the hottest startups with unique holiday gifts.</h1>
-              <!--<p class="lead">Test</p>-->
-              <!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/largegraphic2.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-               <h1>This holiday,<br />do more than shop.<br />Shop <em>Startup</em>.</h1>
-              <!--<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
+    <div style="height:80px"></div><!-- /.carousel -->
 
 
 
@@ -85,17 +60,24 @@
     <div class="container marketing">
     
     	<?php
-            
-			$query1 = "SELECT * FROM `categories` where id = " . $_REQUEST["category"];
-			if($result1 = $db['link']->query($query1)){
-        		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
-		    		$categoryName = $row1["name"];
-		    		break;
-        		}
+            if ($_REQUEST["category"]) {
+				$query1 = "SELECT * FROM `categories` where id = " . $_REQUEST["category"];
+				if($result1 = $db['link']->query($query1)){
+	        		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
+			    		$categoryName = $row1["name"];
+			    		break;
+	        		}
+	        	}
+        	} else if ($_REQUEST["q"]) {
+	        	$categoryName = 'Products containing "' . $_REQUEST["q"] . '"';
         	}
         ?>
     
-    	<h2>Discover / <strong><?= $categoryName ?></strong></h2>
+        <? if ($_REQUEST["category"] || $_REQUEST["q"]) { ?>
+    		<h2><a href="<? echo $cfg['weburl']; ?>/search.php">Discover</a> / <strong><?= $categoryName ?></strong></h2>
+    	<? } else { ?>
+    		<h2>Discover / <strong>Products</strong></h2>
+    	<? } ?>
         
         <div class="centered clearfix">
             <div id="prod-container">
@@ -104,7 +86,7 @@
             if ($_REQUEST["category"]) {
 				$query1 = "SELECT * FROM `products` where category = " . $_REQUEST["category"] . " ORDER BY `sort` ASC";
 			} else if ($_REQUEST["q"]) {
-				$query1 = "SELECT * FROM `products` where name like '%" . $_REQUEST["q"] . "%' ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` where productname like '%" . $_REQUEST["q"] . "%' or productdesc like '" . $_REQUEST["q"] . "' ORDER BY `sort` ASC";
 			} else {
 				$query1 = "SELECT * FROM `products` ORDER BY `sort` ASC";
 			} 

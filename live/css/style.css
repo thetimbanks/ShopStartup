@@ -31,8 +31,8 @@
 	  text-align:left;
 	}
 	.prod-image {
-		border-radius-top-left:5px;
-		border-radius-top-right:5px;
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
 	}
 	.prod-itemlabel {
 		display:block;
@@ -284,4 +284,8 @@
         line-height: 1.5;
       }
 
+    }
+    
+    footer {
+	    margin-top: 25px;
     }
