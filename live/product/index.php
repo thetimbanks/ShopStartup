@@ -107,7 +107,7 @@
             ?>
     
     			<div class="span4">
-                    <div class="prod-item">
+                    <div class="prod-item" style="display:block;">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" />
                     </div>
                     <div class="spacer"></div>
