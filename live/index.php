@@ -61,7 +61,35 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
-
+    <div class="container featured">
+    	
+    	<?php
+            
+				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 and `featured` like 1 ORDER BY `sort` ASC";
+				if($result1 = $db['link']->query($query1)){
+            		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
+            ?>
+            
+            <a class="wrapper" href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
+            <div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
+                <div class="prod-item">
+                
+                	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
+                    
+                    <div class="prod-itemlabel">
+                        <h4><? echo $row1['productname']; ?></h4>
+                        <? if(strlen($row1['productdesc']) > 150){ echo substr($row1['productdesc'],0,150). "..."; } else { echo $row1['productdesc']; } ?>
+                        <? if($row1['city'] && $row1['state']){ 
+							echo "<br /><small class=\"muted\"><img src=\"" .$cfg['weburl']. "/img/location-pin\" /> " .$row1['city']. ", " .$row1['state']. "</small>"; } ?>
+                    </div>
+                </div>
+            </a>
+            
+            <?php
+					}
+				}
+			?>
+    </div>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
