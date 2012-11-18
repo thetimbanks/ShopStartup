@@ -71,10 +71,7 @@
     </div><!-- /.carousel -->
 
 				<? } ?>
-    
-
-<div class="product-spacer"></div>
-    
+        
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
@@ -87,7 +84,7 @@
             <title>Shop Startup: <? echo $row1['productname']; ?></title>
             <div class="row-fluid">
 
-    			<div class="span4">
+    			<div class="span4" style="position:relative; top:-220px;">
                   <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
