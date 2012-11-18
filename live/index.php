@@ -61,15 +61,9 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
-<<<<<<< HEAD
     <div class="featured">
     <div class="container">
     	<h2><strong>Featured Products</strong></h2>
-=======
-    <div class="container featured">
-    
-    	<h2><strong>Staff Picks</strong></h2>
->>>>>>> 358c0f5d9e3eb5364bf5349c5e3189d163601856
     	
     	<?php
             
@@ -79,13 +73,8 @@
             ?>
             
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
-<<<<<<< HEAD
                 <div class="prod-item">
                 
-=======
-                <div class="prod-item wrapper">
-            
->>>>>>> 358c0f5d9e3eb5364bf5349c5e3189d163601856
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
                     <div class="prod-itemlabel">
@@ -117,27 +106,16 @@
             
             <?php
             
-<<<<<<< HEAD
-				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 AND `redbox` != 1 ORDER BY `sort` ASC";
-=======
-				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 ORDER BY `ribbon` DESC,`sort` ASC";
->>>>>>> 358c0f5d9e3eb5364bf5349c5e3189d163601856
+				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 AND `redbox` != 1 ORDER BY `ribbon` DESC,`sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
-<<<<<<< HEAD
                 <div class="prod-item wrapper"> 
                 	<? if ($row1["ribbon"] == 1) {?> 
 	                	<div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
 	                <? } ?>
-=======
-                <div class="prod-item wrapper">
-                	<?php if($row1['ribbon'] == 1){ ?>
-                		<div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
-                	<?php } ?>
->>>>>>> 358c0f5d9e3eb5364bf5349c5e3189d163601856
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
                     <div class="prod-itemlabel">
