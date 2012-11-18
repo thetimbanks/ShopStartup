@@ -207,7 +207,7 @@
     /* RESPONSIVE CSS
     -------------------------------------------------- */
 
-    @media (max-width: 979px) {
+    @media (max-width: 2000px) {
 
       .container.navbar-wrapper {
         margin-bottom: 0;
