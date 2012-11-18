@@ -124,19 +124,13 @@
                 	<h1 itemprop="name"><? echo $row1['productname']; ?></h1>
                     <h4><small><em>by</em></small> <? echo $row1['companyname']; ?></h4>
                     <p itemprop="description"><? echo $row1['productdesc']; ?></p>
+                    	<div class="spacer"></div>
+                    <h2>more about <strong><?php echo $row1['companyname']; ?></strong></h2>
+                    <p><? echo $row1['companydesc']; ?></p>
+
                 </div>
             </div>
             
-            <div class="row-fluid">
-            	
-            	<div class="span12">
-            		
-                    <h2>more about <strong><?php echo $row1['companyname']; ?></strong></h2>
-                    <p><? echo $row1['companydesc']; ?></p>
-                
-                </div>
-                
-            </div>
             
             <?php
                         }
