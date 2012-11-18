@@ -188,9 +188,6 @@
 	            columnWidth : 310
 	          });
           });
-          
-          
-          setTimeout(function() {$("#prod-container").masonry( 'reload' ); }, 500);
         })
       }(window.jQuery)
     </script>
