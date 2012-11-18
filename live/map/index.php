@@ -20,28 +20,10 @@
     <![endif]-->
     
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map_canvas { height: 100% }
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkJ9Y8dNxb9c5us-bMnG3jQ-sVuN2Fn5U&sensor=false">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-      }
-    </script>
+
   </head>
 
-<body onload="initialize()">
+<body>
 
 
 
@@ -67,8 +49,10 @@
 
             <div class="row-fluid">
             	<div class="span12">
+                
+                <h1>Our Startups</h1>
             		
-                    <div id="map_canvas" style="width:100%; height:400px"></div>
+                    <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=205117161624230564962.0004cebcfcd5298ba4366&amp;ie=UTF8&amp;t=m&amp;z=4&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=205117161624230564962.0004cebcfcd5298ba4366&amp;ie=UTF8&amp;t=m&amp;z=4&amp;source=embed" style="color:#0000FF;text-align:left">Shop Startup Businesses</a> in a larger map</small>
                 
                 </div>
             </div>
