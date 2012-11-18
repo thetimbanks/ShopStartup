@@ -26,6 +26,16 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     
+    <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=289974361122262";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
   </head>
 
 <body>
@@ -65,7 +75,23 @@
                         <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1>
-                            <a href="#" class="btn">Save</a>
+                            
+                            <!-- Facebook Like Button -->
+                            <div class="fb-like" 
+                            	data-href="<?= $_SERVER['PHP_SELF']; ?>" 
+                                data-send="false" data-layout="button_count" 
+                                data-width="450" 
+                                data-show-faces="false" 
+                                data-font="lucida grande">
+                            </div>
+                            <br />
+                            <!-- Tweet Button -->
+                            <a href="https://twitter.com/share" 
+                            	class="twitter-share-button" 
+                                data-text="Check out <? echo urlencode($row1['productname']); ?> on Shop Startup!" 
+                                data-via="shopstartup" data-dnt="true">Tweet</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                
                             <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                         </div>
                   </div>
