@@ -21,17 +21,17 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<script src="<?php echo $cfg['weburl']; ?>/js/jquery.masonry.min.js"></script>
-    <script>
-    
-        $(function(){
-          $('#prod-container').masonry({
-            // options
-            itemSelector : '.prod-item',
-            columnWidth : 310
-          });
-        });
-    
-    </script>
+<script type="application/javascript">
+
+	$(function(){
+	  $('#prod-container').masonry({
+		// options
+		itemSelector : '.prod-item',
+		columnWidth : 310
+	  });
+	});
+
+</script>
 
   </head>
 
