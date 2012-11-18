@@ -72,16 +72,16 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepone.png">
-          <h2><strong>Tell us about your products. (We'll give you the form.)</strong></h2>
+          <h2><strong>Tell us about your products.</strong><br />(We'll give you the form.)</h2>
           <p><a class="btn" href="<?= $cfg['weburl']; ?>/files/companyproductform.pdf" target="_new">Download &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/steptwo.png">
-          <h2><strong>Install our tracker. (We've got to make money too!)</strong></h2>
+          <h2><strong>Install our tracker.</strong><br />(We've got to make money too!)</h2>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepthree.png">
-          <h2><strong>There isn't one! (Unless you need our help.)</strong></h2>
+          <h2><strong>There isn't one!</strong><br />(Unless you need our help.)</h2>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
