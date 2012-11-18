@@ -63,12 +63,26 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
                 <ul class="dropdown-menu">
+                	<?php
+            
+						$query1 = "SELECT * FROM `categories` ORDER BY `name` ASC";
+						if($result1 = $db['link']->query($query1)){
+		            		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
+		            ?>
+		            <li><a href="<?= $cfg['weburl']; ?>/search.php?category=<?= $row1["id"]?>"><?= $row1["name"]?></a></li>
+		            
+		            <?php
+							}
+						}
+					?>
+
                   <li><a href="#">Food</a></li>
                   <li><a href="#">Relationship</a></li>
                   <li><a href="#">Entertainment</a></li>
                   <li><a href="#">Beauty</a></li>
                   <li><a href="#">Tech</a></li>
                   <li><a href="#">Clothing</a></li>
+                  <li><a href="#">Kids</a></li>
                  <!-- <li class="divider"></li>
                   <li class="nav-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
