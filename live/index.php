@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="img/largegraphic6.jpg" alt="">
+          <img src="img/largegraphic5.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
                <h1 style="color:#000;">This holiday,<br />do more than shop.<br />Shop <em>Startup</em>.</h1>
