@@ -76,23 +76,28 @@
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1>
                             
-                            <!-- Facebook Like Button -->
-                            <div class="fb-like" 
-                            	data-href="<?= $_SERVER['PHP_SELF']; ?>" 
-                                data-send="false" data-layout="button_count" 
-                                data-width="450" 
-                                data-show-faces="false" 
-                                data-font="lucida grande">
+                            <div class="row">
+                            	<div class="span2">
+                                    <!-- Facebook Like Button -->
+                                    <div class="fb-like" 
+                                        data-href="<?= $_SERVER['PHP_SELF']; ?>" 
+                                        data-send="false" data-layout="button_count" 
+                                        data-width="450" 
+                                        data-show-faces="false" 
+                                        data-font="lucida grande">
+                                    </div>
+                                    <br />
+                                    <!-- Tweet Button -->
+                                    <a href="https://twitter.com/share" 
+                                        class="twitter-share-button" 
+                                        data-text="Check out <? echo urlencode($row1['productname']); ?> on Shop Startup!" 
+                                        data-via="shopstartup" data-dnt="true">Tweet</a>
+                                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                </div>
+                                <div class="span2">
+                                    <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
+                            	</div>
                             </div>
-                            <br />
-                            <!-- Tweet Button -->
-                            <a href="https://twitter.com/share" 
-                            	class="twitter-share-button" 
-                                data-text="Check out <? echo urlencode($row1['productname']); ?> on Shop Startup!" 
-                                data-via="shopstartup" data-dnt="true">Tweet</a>
-								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                                
-                            <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                         </div>
                   </div>
                     
