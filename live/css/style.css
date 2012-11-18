@@ -94,6 +94,7 @@
 	  	-moz-box-shadow:    3px 3px 3px 2px #AAA;
   		-webkit-box-shadow: 3px 3px 3px 2px #AAA;
  		box-shadow:         3px 3px 3px 2px #AAA;
+ 		clear: left;
     }
 
     .carousel .container {
