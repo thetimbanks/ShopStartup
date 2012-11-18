@@ -117,7 +117,7 @@
             </div>
         </div>
 
-
+		<img src="http://shopstartup.co/ping/?company=1" width="1" height="1" />
 
       <!-- FOOTER -->
       <footer>
