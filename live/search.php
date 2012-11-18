@@ -19,20 +19,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script src="<?php echo $cfg['weburl']; ?>/js/jquery.masonry.min.js"></script>
-<script type="application/javascript">
-
-	$(function(){
-	  $('#prod-container').masonry({
-		// options
-		itemSelector : '.prod-item',
-		columnWidth : 310
-	  });
-	});
-
-</script>
-
   </head>
 
   <body>
@@ -153,5 +139,23 @@
         })
       }(window.jQuery)
     </script>
+        <script src="js/jquery.masonry.min.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel();
+          
+          $('#prod-container').masonry({
+            // options
+            itemSelector : '.prod-item',
+            columnWidth : 310
+          });
+          
+          setTimeout(function() {$("#prod-container").masonry( 'reload' ); }, 100);
+        })
+      }(window.jQuery)
+    </script>
+
   </body>
 </html>
