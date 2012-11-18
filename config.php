@@ -17,7 +17,7 @@
 	$cfg['sqltime'] = strftime("%Y-%m-%d %H:%M:%S",$cfg['timestamp']);
 	
 	$cfg['home'] = "http://" .$_SERVER['SERVER_NAME'];
-	$cfg['weburl'] = $cfg['home'] . "/live";
+	$cfg['weburl'] = $cfg['home'];
 	
 	$cfg['pusher_key'] = "af4f0ba396f0d552d1e1";
 	$cfg['pusher_secret'] = "08c13b0ec61e41e826b6";
