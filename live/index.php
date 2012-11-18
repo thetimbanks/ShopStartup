@@ -88,7 +88,6 @@
                     
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
-                        <br />
                         <? if(strlen($row1['productdesc']) > 200){ echo substr($row1['productdesc'],0,200). "..."; } else { echo $row1['productdesc']; } ?>
                     </div>
                 </div>
