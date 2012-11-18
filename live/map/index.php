@@ -63,12 +63,6 @@
     
     	<div class="clearfix">
 
-            <?php
-                if(is_numeric($_GET['id'])){
-                    $query1 = "SELECT * FROM `products` WHERE `id` LIKE '" .addslashes($_GET['id']). "' LIMIT 1";
-                    if($result1 = $db['link']->query($query1)){
-                        while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
-            ?>
 
             <div class="row-fluid">
             	<div class="span12">
@@ -77,15 +71,6 @@
                 
                 </div>
             </div>
-            
-            <?php
-                        }
-                    }
-                }
-            ?>
-            
-            
-            
 
 		</div>
 
