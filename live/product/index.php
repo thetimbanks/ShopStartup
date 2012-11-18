@@ -107,10 +107,10 @@
             ?>
     
     			<div class="span4">
-                    <div class="prod-item" style="display:block;">
+                    <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" />
                     </div>
-                    <div class="spacer"></div>
+                    <br />
                     <h2>$ <?php echo number_format($row1['price'],2); ?></h2>
                     Save / Buy Now
                     
