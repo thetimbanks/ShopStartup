@@ -137,7 +137,7 @@
             
             <?php
             
-				$query1 = "SELECT * FROM `products` ORDER BY `dtadded` DESC";
+				$query1 = "SELECT * FROM `products` ORDER BY `sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
