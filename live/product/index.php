@@ -112,7 +112,7 @@
                         <div class="prod-itemlabel">
                             <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
                             <a href="#" class="btn">Save</a>
-                            <a href="#" class="btn-primary">Buy Now</a>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                     
