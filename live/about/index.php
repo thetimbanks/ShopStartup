@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Shop Startup: For Businesses</title>
+    <title>Shop Startup: About Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -47,12 +47,7 @@
         <div class="item active">
           <img src="<?php echo $cfg['weburl']; ?>/img/businessesbanner.jpg" alt="">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>You know your product.<br />
-              		We know how to get it<br />
-                    out there.</h1>
-              <!--<p class="lead">Test</p>-->
-            </div>
+
           </div>
         </div>
       </div>
@@ -72,16 +67,19 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepone.png">
-          <h2><strong>Tell us about your products.</strong></h2><h4><em>(We'll give you the form.)</em></h4>
+          <h2>Start Here.</h2>
+          <p>Tell us about your products. (We'll give you the form.)</p>
           <p><a class="btn" href="<?= $cfg['weburl']; ?>/files/companyproductform.pdf" target="_new">Download &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/steptwo.png">
-          <h2><strong>Install our tracker.</strong></h2><h4><em>(We've got to make money too!)</em></h4>
+          <h2>Step 2</h2>
+          <p>Install our tracker. (We've got to make money too!)</p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepthree.png">
-          <h2><strong>There isn't one!</strong></h2><h4><em>(Unless you need our help.)</em></h4>
+          <h2>Step 3</h2>
+          <p>There isn't one! (Unless you need our help.)</p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
