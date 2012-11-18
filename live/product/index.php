@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     
-    <div id="fb-root"></div>
+    <!--<div id="fb-root"></div>
 	<script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -34,7 +34,7 @@
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=289974361122262";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script>-->
     
   </head>
 
@@ -91,13 +91,13 @@
                                         $currentUrl = $protocol . '://' . $host . $script . '?' . $params; 
                                     ?>
                                     <!-- Facebook Like Button -->
-                                    <div class="fb-like" 
+                                    <!--<div class="fb-like" 
                                         data-href="<?= $currentUrl; ?>" 
                                         data-send="false" data-layout="button_count" 
                                         data-width="450" 
                                         data-show-faces="false" 
                                         data-font="lucida grande">
-                                    </div>
+                                    </div>-->
                                     <br />
                                     <!-- Tweet Button -->
                                     <a href="https://twitter.com/share" 
