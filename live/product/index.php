@@ -49,8 +49,7 @@
 
     <div class="container marketing">
     
-    	<div class="clearfix">
-        
+    	<div class="clearfix" itemscope itemtype="http://schema.org/Product">
 
             <?php
                 if(is_numeric($_GET['id'])){
@@ -63,8 +62,8 @@
     			<div class="span4">
                   <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
-                        <div class="prod-itemlabel">
-                            <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
+                        <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1>
                             <a href="#" class="btn">Save</a>
                             <a href="<? echo $row1['buylink']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                         </div>
@@ -73,9 +72,9 @@
                     
                	</div>
                 <div class="span8">
-                	<h1><? echo $row1['productname']; ?></h1>
+                	<h1 itemprop="name"><? echo $row1['productname']; ?></h1>
                     <h4><small><em>by</em></small> <? echo $row1['companyname']; ?></h4>
-                    <p><? echo $row1['productdesc']; ?></p>
+                    <p itemprop="description"><? echo $row1['productdesc']; ?></p>
                 </div>
             </div>
             
