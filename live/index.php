@@ -44,7 +44,7 @@
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     
     <div class="centered">
-    	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="450" height="100" />
+    	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="683" height="90" />
     </div>
     
     <div class="container navbar-wrapper">
