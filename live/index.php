@@ -83,7 +83,7 @@
 
     <div class="container marketing">
     
-    	<h2><strong>Featured Products</strong></h2>
+    	<h2>Discover / <strong>All Products</strong></h2>
         
         <div class="centered clearfix">
             <div id="prod-container">
