@@ -18,6 +18,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
       html { height: 100% }
@@ -67,7 +68,7 @@
             <div class="row-fluid">
             	<div class="span12">
             		
-                    <div id="map_canvas" style="width:100%; height:100%"></div>
+                    <div id="map_canvas" style="width:100%; height:400px"></div>
                 
                 </div>
             </div>
