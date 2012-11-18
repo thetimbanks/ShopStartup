@@ -136,14 +136,25 @@
 
     <div class="container marketing">
     
-    	<h2><strong>Featured Products</strong></h2>
+    	<?php
+            
+			$query1 = "SELECT * FROM `products` where category = " . $_REQUEST["category"] . " ORDER BY `sort` ASC";
+			if($result1 = $db['link']->query($query1)){
+        		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
+		    		$categoryName = $row1["name"];
+		    		break;
+        		}
+        	}
+        ?>
+    
+    	<h2>Discover / <strong><?= $categoryName ?></strong></h2>
         
         <div class="centered clearfix">
             <div id="prod-container">
             
             <?php
             
-				$query1 = "SELECT * FROM `products` ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` where category = " . $_REQUEST["category"] . " ORDER BY `sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
