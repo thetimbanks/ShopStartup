@@ -84,8 +84,6 @@
 
     </div><!-- /.container -->
 
-
-	<div class="product-spacer"></div>
     
 
 
