@@ -80,7 +80,7 @@
                                 <div class="span6">
                                     <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                             	</div>
-                                <div class="span6 pagination-right">
+                                <div class="span6">
 									<?php
                                      $protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') 
                                                         === FALSE ? 'http' : 'https';
@@ -103,7 +103,7 @@
                                     <a href="https://twitter.com/share" 
                                         class="twitter-share-button" 
                                         data-text="Check out <? echo urlencode($row1['productname']); ?> on Shop Startup!" 
-                                        data-via="shopstartup" data-dnt="false">Tweet</a>
+                                        data-via="shopstartup" data-dnt="true">Tweet</a>
                                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                                     <br />
                                     <!-- Pin It Button -->
