@@ -9,25 +9,18 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/style.css" rel="stylesheet">
     
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
- <!--   <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script src="js/jquery.masonry.min.js"></script>
+	<script src="<?php echo $cfg['weburl']; ?>/js/jquery.masonry.min.js"></script>
     <script>
     
         $(function(){
@@ -51,7 +44,7 @@
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     
     <div class="centered">
-    	<img src="img/logo.png" width="450" height="100" />
+    	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="450" height="100" />
     </div>
     
     <div class="container navbar-wrapper">
@@ -149,7 +142,10 @@
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
-                <div class="prod-item">image
+                <div class="prod-item">
+                
+                	<img src="<? echo $row1['image']; ?>" width="290" />
+                    
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
                         <strong><? echo $row1['companyname']; ?></strong>
