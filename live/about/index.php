@@ -61,26 +61,6 @@
 
     <div class="container marketing">
     
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
-          <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepone.png">
-          <h2>Start Here.</h2>
-          <p>Tell us about your products. (We'll give you the form.)</p>
-          <p><a class="btn" href="<?= $cfg['weburl']; ?>/files/companyproductform.pdf" target="_new">Download &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/steptwo.png">
-          <h2>Step 2</h2>
-          <p>Install our tracker. (We've got to make money too!)</p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepthree.png">
-          <h2>Step 3</h2>
-          <p>There isn't one! (Unless you need our help.)</p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
-
 
    
 
