@@ -72,6 +72,9 @@
 
 				<? } ?>
         
+    <? if(!$row1['bannerimg']){ ?>
+        <div class="product-spacer"></div>
+    <? } ?>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
