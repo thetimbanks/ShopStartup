@@ -132,7 +132,7 @@
     
     	<h2><strong>Featured Products</strong></h2>
         
-        <div class="centered">
+        <div class="centered clearfix">
             <div id="prod-container">
             
             <?php
