@@ -66,7 +66,7 @@
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1>
                             <a href="#" class="btn">Save</a>
-                            <a href="<? echo $row1['buylink']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
+                            <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                         </div>
                   </div>
                     
