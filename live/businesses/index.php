@@ -49,7 +49,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>You know your product.<br />
-              		We know how to get it out there.</h1>
+              		We know how to get it<br />
+                    out there.</h1>
               <!--<p class="lead">Test</p>-->
             </div>
           </div>
