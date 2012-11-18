@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Shop Startup: Product</title>
+    <title>Shop Startup: Product Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -40,7 +40,7 @@
 
     
 
-	<div class="product-spacer"></div>
+<div class="product-spacer"></div>
     
 
     <!-- Marketing messaging and featurettes
@@ -51,7 +51,6 @@
     
     	<div class="clearfix">
         
-        	<div class="row-fluid">
 
             <?php
                 if(is_numeric($_GET['id'])){
@@ -59,16 +58,17 @@
                     if($result1 = $db['link']->query($query1)){
                         while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
-    
+            <div class="row-fluid">
+
     			<div class="span4">
-                    <div class="prod-item">
+                  <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
                         <div class="prod-itemlabel">
                             <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
                             <a href="#" class="btn">Save</a>
                             <a href="<? echo $row1['buylink']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                         </div>
-                    </div>
+                  </div>
                     
                     
                	</div>
@@ -77,6 +77,18 @@
                     <h4><small><em>by</em></small> <? echo $row1['companyname']; ?></h4>
                     <p><? echo $row1['productdesc']; ?></p>
                 </div>
+            </div>
+            
+            <div class="row-fluid">
+            	
+            	<div class="span12">
+            		
+                    <h2>More about <strong><?php echo $row1['companyname']; ?></strong></h2>
+                    <p><? echo $row1['companydesc']; ?></p>
+                
+                </div>
+                
+            </div>
             
             <?php
                         }
@@ -85,7 +97,7 @@
             ?>
             
             
-			</div>
+            
 
 		</div>
 
@@ -95,7 +107,7 @@
         <p>&copy; 2012 Shop Startup &middot; <a href="#">About Us</a></p>
       </footer>
 
-    </div><!-- /.container -->
+</div><!-- /.container -->
 
 
 
