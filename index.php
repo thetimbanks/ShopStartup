@@ -181,13 +181,16 @@
           // carousel demo
           $('#myCarousel').carousel();
           
-          $('#prod-container').masonry({
-            // options
-            itemSelector : '.prod-item',
-            columnWidth : 310
+          $('#prod-container').imagesLoaded(function() {
+	          $('#prod-container').masonry({
+	            // options
+	            itemSelector : '.prod-item',
+	            columnWidth : 310
+	          });
           });
           
-          setTimeout(function() {$("#prod-container").masonry( 'reload' ); }, 100);
+          
+          setTimeout(function() {$("#prod-container").masonry( 'reload' ); }, 500);
         })
       }(window.jQuery)
     </script>
