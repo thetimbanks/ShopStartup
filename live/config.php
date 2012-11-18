@@ -16,7 +16,12 @@
 	$cfg['timestamp'] = mktime();
 	$cfg['sqltime'] = strftime("%Y-%m-%d %H:%M:%S",$cfg['timestamp']);
 	
-	$cfg['weburl'] = "http://" .$_SERVER['SERVER_NAME'] . "/live";
+	$cfg['home'] = "http://" .$_SERVER['SERVER_NAME'];
+	$cfg['weburl'] = $cfg['home'] . "/live";
+	
+	$cfg['pusher_key'] = "af4f0ba396f0d552d1e1";
+	$cfg['pusher_secret'] = "08c13b0ec61e41e826b6";
+	$cfg['pusher_appid'] = "31955";
 	
 	if(!$_COOKIE['ShopStartup']){
 		
