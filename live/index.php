@@ -88,7 +88,6 @@
                     
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
-                        <strong><? echo $row1['companyname']; ?></strong>
                         <br />
                         <? if(strlen($row1['productdesc']) > 200){ echo substr($row1['productdesc'],0,200). "..."; } else { echo $row1['productdesc']; } ?>
                     </div>
@@ -102,8 +101,6 @@
 
             </div>
         </div>
-
-		<img src="http://shopstartup.co/ping/?company=1" width="1" height="1" />
 
       <!-- FOOTER -->
       <footer>
