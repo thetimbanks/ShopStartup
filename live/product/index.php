@@ -37,7 +37,7 @@
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     
     <div class="centered">
-    	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="450" height="100" />
+    	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="683" height="90" />
     </div>
     
     <div class="container navbar-wrapper">
@@ -112,7 +112,7 @@
                         <div class="prod-itemlabel">
                             <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
                             <a href="#" class="btn">Save</a>
-                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="<? echo $row1['buylink']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                     
