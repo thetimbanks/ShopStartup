@@ -72,7 +72,7 @@
             if ($_REQUEST["category"]) {
 				$query1 = "SELECT * FROM `products` where category = " . $_REQUEST["category"] . " ORDER BY `sort` ASC";
 			} else if ($_REQUEST["q"]) {
-				$query1 = "SELECT * FROM `products` where productname like '%" . $_REQUEST["q"] . "%' or productdesc like '%" . $_REQUEST["q"] . "%' ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` where productname like '%" . $_REQUEST["q"] . "%' or productdesc like '%" . $_REQUEST["q"] . "%' or city like '%" . $_REQUEST["q"] . "%' or companyname like '%" . $_REQUEST["q"] . "%' or companydesc like '%" . $_REQUEST["q"] . "%' ORDER BY `sort` ASC";
 			} else {
 				$query1 = "SELECT * FROM `products` ORDER BY `sort` ASC";
 			} 
