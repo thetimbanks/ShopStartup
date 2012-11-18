@@ -40,7 +40,7 @@
     	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="450" height="100" />
     </div>
     
-    <div class="container navbar-wrapper">
+    <div class="container navbar-wrapper clearfix">
       <div class="navbar navbar-inverse">
         <div class="navbar-inner">
           <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
