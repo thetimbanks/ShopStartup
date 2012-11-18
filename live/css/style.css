@@ -371,3 +371,36 @@
 .ribbon-red:after {
   right: 0;
 }
+
+/* tagline */
+.tagline{
+	position:relative;
+	color:#fff;
+	background:#bf1f23;
+	font-size:1.2em;
+	float:left;
+	clear:both;
+	padding:7px 10px 7px 20px;
+	margin-left:-20px;
+	margin-bottom:-22px;
+	text-shadow:0 -1px #d0284b, 0 1px #f96080;
+	left: 10px;
+	top: -18px;
+
+	-moz-box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+	-webkit-box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+	-o-box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+	box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+}
+.tagline:before{
+	content:" ";
+	background:url('../img/ribbon.png') no-repeat;
+	display:block;
+	width:10px;
+	height:10px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin-bottom:-10px;
+	z-index:-1;
+}
