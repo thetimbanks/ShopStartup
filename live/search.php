@@ -86,6 +86,12 @@
                 
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
+                    <? if ($row1["tagline"] != "") {?> 
+                    	<div class="clearfix">
+	                	<div class="tagline clearfix"><?= $row1["tagline"]?></div>
+                    	</div>
+	                <? } ?>
+                    
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
                         <? if(strlen($row1['productdesc']) > 150){ echo substr($row1['productdesc'],0,150). "..."; } else { echo $row1['productdesc']; } ?>

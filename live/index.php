@@ -76,6 +76,12 @@
                 <div class="prod-item">
                 
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
+                	
+                	<? if ($row1["tagline"] != "") {?> 
+                    	<div class="clearfix">
+	                	<div class="tagline clearfix"><?= $row1["tagline"]?></div>
+                    	</div>
+	                <? } ?>
                     
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
