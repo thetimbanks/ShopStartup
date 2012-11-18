@@ -38,23 +38,6 @@
     
 	<?php nav(); ?>
 
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="<?php echo $cfg['weburl']; ?>/img/team.jpg" alt="">
-          <div class="container">
-
-          </div>
-        </div>
-      </div>
-    </div><!-- /.carousel -->
-
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -62,6 +45,7 @@
     <div class="container marketing">
     
     <div class="container">
+    <img src="<?php echo $cfg['weburl']; ?>/img/team.jpg" alt="">
     	<h2>About Us / <strong>Our Team</strong></h2>
         
         <div class="row">
