@@ -37,9 +37,9 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="img/largegraphic1.jpg" alt="">
+          <img src="img/largegraphic4.jpg" alt="">
           <div class="container">
-            <div class="carousel-caption">
+            <div class="carousel-caption" style="color:#000;">
               <h1>Shop Startup connects you to the hottest startups with unique holiday gifts.</h1>
               <!--<p class="lead">Test</p>-->
               <!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
