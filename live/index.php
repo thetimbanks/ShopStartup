@@ -67,15 +67,14 @@
     	
     	<?php
             
-				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 and `featured` like 1 ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 and `redbox` like 1 ORDER BY `sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
                 <div class="prod-item wrapper">
-                
-            <div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
+            
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
                     <div class="prod-itemlabel">
@@ -106,14 +105,16 @@
             
             <?php
             
-				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 AND `featured` != 1 ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 ORDER BY `ribbon` DESC,`sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
-                <div class="prod-item">
-                
+                <div class="prod-item wrapper">
+                	<?php if($row1['featured'] == 1){ ?>
+                		<div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
+                	<?php } ?>
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
                     <div class="prod-itemlabel">
