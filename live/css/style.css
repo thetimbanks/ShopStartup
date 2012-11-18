@@ -19,7 +19,7 @@
 		display:block;
 		text-align:center;
 	}
-	.prod-item {
+	.prod-item div {
 	  width: 290px;
 	  margin: 10px;
 	  float: left;
