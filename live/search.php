@@ -101,8 +101,14 @@
             <div id="prod-container">
             
             <?php
-            
+            if ($_REQUEST["category"]) {
 				$query1 = "SELECT * FROM `products` where category = " . $_REQUEST["category"] . " ORDER BY `sort` ASC";
+			} else if ($_REQUEST["q"]) {
+				$query1 = "SELECT * FROM `products` where name like '%" . $_REQUEST["q"] . "%' ORDER BY `sort` ASC";
+			} else {
+				$query1 = "SELECT * FROM `products` ORDER BY `sort` ASC";
+			} 
+			
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
