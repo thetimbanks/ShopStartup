@@ -17,6 +17,8 @@
 	$cfg['sqltime'] = strftime("%Y-%m-%d %H:%M:%S",$cfg['timestamp']);
 	
 	$cfg['weburl'] = "http://shopstartup.co/live";
+	
+	require 'nav.php';
 
 
 ?>
