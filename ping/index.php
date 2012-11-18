@@ -1,12 +1,11 @@
 <?php
 
 	// Asynchronous purchase log page
-	header('Access-Control-Allow-Origin: *');
 	
 	// Connect to DB
 	require '../live/config.php';
 	
-	$cookie = $_COOKIE["ss_user_tracker"];
+	$cookie = $_COOKIE["ShopStartup"];
 	
 	if(is_numeric($_GET['company'])){
 	// Add record to DB

@@ -18,6 +18,13 @@
 	
 	$cfg['weburl'] = "http://shopstartup.co/live";
 	
+	if(!$_COOKIE['ShopStartup']){
+		
+		session_start();
+		setcookie("ShopStartup",session_id(), 0);
+		
+	}
+	
 	require 'nav.php';
 
 
