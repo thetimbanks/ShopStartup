@@ -89,7 +89,7 @@
 
     			<div class="span4"<? if($row1['bannerimg']){ ?> style="position:relative; top:-220px;"<? } ?>>
                   <div class="prod-item">
-                        <img src="<?= $row1['weburl'].$row1['image']; ?>" class="prod-image" /><br />
+                        <img src="<?= $cfg['weburl'].$row1['image']; ?>" class="prod-image" /><br />
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <?php if($row1['price'] != 0.00){ ?><h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1><?php } ?>
                             
