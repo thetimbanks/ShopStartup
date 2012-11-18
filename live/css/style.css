@@ -29,7 +29,10 @@
       -moz-box-shadow: 0 2px 5px rgba(0,0,0,.25);
       box-shadow: 0 2px 5px rgba(0,0,0,.25);
 	  text-align:left;
-
+	}
+	.prod-item img {
+		border-radius-top-left:5px;
+		border-radius-top-right:5px;
 	}
 	.prod-itemlabel {
 		display:block;
