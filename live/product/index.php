@@ -106,13 +106,15 @@
                         while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
     
-    			<div class="span4 centered">
+    			<div class="span4">
                     <div class="prod-item">
                         <img src="<? echo $row1['image']; ?>" class="prod-image" />
                     </div>
                	</div>
                 <div class="span8">
                 	<h1><? echo $row1['productname']; ?></h1>
+                    <h4><? echo $row1['companyname']; ?></h4>
+                    <p><? echo $row1['productdesc']; ?></p>
                 </div>
             
             <?php
