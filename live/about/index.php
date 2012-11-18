@@ -45,7 +45,7 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="<?php echo $cfg['weburl']; ?>/img/businessesbanner.jpg" alt="">
+          <img src="<?php echo $cfg['weburl']; ?>/img/team.jpg" alt="">
           <div class="container">
 
           </div>
