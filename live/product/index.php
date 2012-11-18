@@ -96,6 +96,13 @@
                                         data-text="Check out <? echo urlencode($row1['productname']); ?> on Shop Startup!" 
                                         data-via="shopstartup" data-dnt="true">Tweet</a>
                                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                    <br />
+                                    <!-- Pin It Button -->
+                                    <a href="http://pinterest.com/pin/create/button/?url=<?= urlencode($_SERVER['PHP_SELF']); ?>&media=<?= urlencode($row1['image']); ?>&description=<?= urlencode($row1['productdesc']); ?>" 
+                                    	class="pin-it-button" 
+                                        count-layout="horizontal">
+                                        	<img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" />
+                                    </a>
                                 </div>
 
                             </div>
@@ -159,5 +166,6 @@
     <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-collapse.js"></script>
     <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-carousel.js"></script>
     <script src="<?php echo $cfg['weburl']; ?>/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>
