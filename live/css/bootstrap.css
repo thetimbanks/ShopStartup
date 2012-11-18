@@ -3185,8 +3185,8 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006dcc;
-  *background-color: #0044cc;
+  background-color: #BF1E2E;
+  *background-color: #BF1E2E;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#BF1E2E), to(#971724));
   background-image: -webkit-linear-gradient(top, #BF1E2E, #971724);
   background-image: -o-linear-gradient(top, #BF1E2E, #971724);
