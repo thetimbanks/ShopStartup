@@ -52,15 +52,15 @@
         
         	<h4>We are entrepreneurs supporting other entrepreneurs.<br />
             	Join our movement to Shop Startup on this and future holidays.</h4>
-            <h4>Here's how we're shopping startup this holiday season:</h4>
-            <p><strong>Julie (Chief Chief):</strong> I pledge 15%</p>
-            <p><strong>Gary (Designer):</strong> I pledge 15%</p>
-            <p><strong>Angela (Designer):</strong> I pledge 15%</p>
-            <p><strong>Tim (Hacker):</strong> I pledge 15%</p>
-            <p><strong>Patrick (Hacker):</strong> I pledge 15%</p>
-            <p><strong>Eddie (Hustler):</strong> I pledge 15%</p>
-            <p><strong>Steve (Hustler):</strong> I pledge 15%</p>
-            <p><strong>Alex (Hustler):</strong> I pledge 15%</p>
+            <!--<h4>Here's how we're shopping startup this holiday season:</h4>-->
+            <p><strong>Julie (Chief Chief)</strong></p>
+            <p><strong>Gary (Designer)</strong></p>
+            <p><strong>Angela (Designer)</strong></p>
+            <p><strong>Tim (Hacker)</strong></p>
+            <p><strong>Patrick (Hacker)</strong></p>
+            <p><strong>Eddie (Hustler)</strong></p>
+            <p><strong>Steve (Hustler)</strong></p>
+            <p><strong>Alex (Hustler)</strong></p>
                     
     </div>
 
