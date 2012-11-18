@@ -83,7 +83,7 @@
             	
             	<div class="span12">
             		
-                    <h2>More about <strong><?php echo $row1['companyname']; ?></strong></h2>
+                    <h2>more about <strong><?php echo $row1['companyname']; ?></strong></h2>
                     <p><? echo $row1['companydesc']; ?></p>
                 
                 </div>
