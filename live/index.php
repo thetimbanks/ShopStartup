@@ -40,7 +40,7 @@
           <img src="img/largegraphic4.jpg" alt="">
           <div class="container">
             <div class="carousel-caption" style="color:#000;">
-              <h1>Shop Startup connects you to the hottest startups with unique holiday gifts.</h1>
+              <h1 style="color:#000;">Shop Startup connects you to the hottest startups with unique holiday gifts.</h1>
               <!--<p class="lead">Test</p>-->
               <!--<a class="btn btn-large btn-primary" href="#">Sign up today</a>-->
             </div>
