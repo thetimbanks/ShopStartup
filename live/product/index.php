@@ -111,7 +111,8 @@
                         <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
                         <div class="prod-itemlabel">
                             <h1>$ <?php echo number_format($row1['price'],2); ?></h1>
-                            Save / Buy Now
+                            <a href="#" class="btn">Save</a>
+                            <a href="#" class="btn">Buy Now</a>
                         </div>
                     </div>
                     
