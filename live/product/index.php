@@ -97,8 +97,8 @@
                                         data-width="450" 
                                         data-show-faces="false" 
                                         data-font="lucida grande">
-                                    </div>-->
-                                    <br />
+                                    </div>
+                                    <br />-->
                                     <!-- Tweet Button -->
                                     <a href="https://twitter.com/share" 
                                         class="twitter-share-button" 
