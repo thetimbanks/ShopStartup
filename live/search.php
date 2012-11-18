@@ -138,7 +138,7 @@
     
     	<?php
             
-			$query1 = "SELECT * FROM `products` where category = " . $_REQUEST["category"] . " ORDER BY `sort` ASC";
+			$query1 = "SELECT * FROM `categories` where category = " . $_REQUEST["category"] . " ORDER BY `sort` ASC";
 			if($result1 = $db['link']->query($query1)){
         		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
 		    		$categoryName = $row1["name"];
