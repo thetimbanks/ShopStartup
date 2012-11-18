@@ -81,6 +81,7 @@
                                     <a href="<? echo $cfg['weburl']; ?>/go/?id=<? echo $_GET['id']; ?>" target="_new" class="btn btn-primary">Buy Now</a>
                             	</div>
                                 <div class="span6">
+                                <? print_r($_SERVER); ?>
                                     <!-- Facebook Like Button -->
                                     <div class="fb-like" 
                                         data-href="<?= $_SERVER['PHP_SELF']; ?>" 
