@@ -144,7 +144,7 @@
             
                 <div class="prod-item">
                 
-                	<img src="<? echo $row1['image']; ?>" width="290" />
+                	<img src="<? echo $row1['image']; ?>" width="290" class="prod-item" />
                     
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
