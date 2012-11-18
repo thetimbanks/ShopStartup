@@ -75,14 +75,6 @@
 							}
 						}
 					?>
-
-                  <li><a href="#">Food</a></li>
-                  <li><a href="#">Relationship</a></li>
-                  <li><a href="#">Entertainment</a></li>
-                  <li><a href="#">Beauty</a></li>
-                  <li><a href="#">Tech</a></li>
-                  <li><a href="#">Clothing</a></li>
-                  <li><a href="#">Kids</a></li>
                  <!-- <li class="divider"></li>
                   <li class="nav-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
