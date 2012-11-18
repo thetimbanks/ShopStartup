@@ -42,7 +42,8 @@
                   <li><a href="#">One more separated link</a></li>-->
                 </ul>
               </li>
-              <li><a href="<? echo $cfg['weburl']; ?>/businesses">For Startups</a></li>
+              <li><a href="<? echo $cfg['weburl']; ?>/map">Our Startups</a></li>
+              <li><a href="<? echo $cfg['weburl']; ?>/businesses">Get Listed</a></li>
               <li><a href="#about">About Us</a></li>
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
             </ul>
