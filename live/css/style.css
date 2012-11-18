@@ -304,11 +304,6 @@
     }
     
     .wrapper {
-  margin: 50px auto;
-  width: 280px;
-  height: 370px;
-  background: white;
-  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
   -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
   box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
@@ -321,13 +316,13 @@
   height: 88px;
   overflow: hidden;
   position: absolute;
-  top: 7px;
-  left: 217px;
+  top: -3px;
+  right: -3px;
 }
 
 .ribbon-red {
   font: bold 15px Sans-Serif;
-  color: #ddd;
+  color: #fff;
   text-align: center;
   text-shadow: rgba(25,25,25,0.5) 0px 1px 0px;
   -webkit-transform: rotate(45deg);
@@ -345,7 +340,7 @@
   background-image:    -moz-linear-gradient(top, #DE3538, #bf1f23); 
   background-image:     -ms-linear-gradient(top, #DE3538, #bf1f23); 
   background-image:      -o-linear-gradient(top, #DE3538, #bf1f23); 
-  color: #ddd;
+  color: #fff;
   -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
   -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
   box-shadow:         0px 0px 3px rgba(0,0,0,0.3);

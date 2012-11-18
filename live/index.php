@@ -70,10 +70,10 @@
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
-            <a class="wrapper" href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
-            <div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
-                <div class="prod-item">
+            <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
+                <div class="prod-item wrapper">
                 
+            <div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
                     
                     <div class="prod-itemlabel">
