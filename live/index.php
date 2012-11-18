@@ -112,7 +112,7 @@
             
             <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
                 <div class="prod-item wrapper">
-                	<?php if($row1['featured'] == 1){ ?>
+                	<?php if($row1['ribbon'] == 1){ ?>
                 		<div class="ribbon-wrapper-red"><div class="ribbon-red">Featured</div></div>
                 	<?php } ?>
                 	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
