@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Shop Startup: Product Details</title>
+   <!-- <title>Shop Startup: Product Details</title>-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -57,6 +57,7 @@
                     if($result1 = $db['link']->query($query1)){
                         while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
+            <title>Shop Startup: <? echo $row1['productname']; ?></title>
             <div class="row-fluid">
 
     			<div class="span4">
