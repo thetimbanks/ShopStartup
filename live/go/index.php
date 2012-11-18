@@ -1,4 +1,5 @@
 <?
+require '../config.php';
 
 if(is_numeric($_GET['id'])){
 	$query1 = "SELECT `buylink` FROM `products` WHERE `id` LIKE '" .$_GET['id']. "'";
