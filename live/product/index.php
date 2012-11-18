@@ -97,6 +97,8 @@
     
     	<div class="clearfix">
         
+        	<div class="row-fluid">
+
             <?php
                 if(is_numeric($_GET['id'])){
                     $query1 = "SELECT * FROM `products` WHERE `id` LIKE '" .addslashes($_GET['id']). "' LIMIT 1";
@@ -104,17 +106,23 @@
                         while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
     
-            <div class="prod-item">
-            
-                <img src="<? echo $row1['image']; ?>" class="prod-image" />
-            
-            </div>
+    			<div class="span4">
+                    <div class="prod-item">
+                        <img src="<? echo $row1['image']; ?>" class="prod-image" />
+                    </div>
+               	</div>
+                <div class="span8">
+                	<h1><? echo $row1['productname']; ?></h1>
+                </div>
             
             <?php
                         }
                     }
                 }
             ?>
+            
+            
+			</div>
 
 		</div>
 
