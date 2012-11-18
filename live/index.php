@@ -76,7 +76,7 @@
             
             <?php
             
-				$query1 = "SELECT * FROM `products` ORDER BY `sort` ASC";
+				$query1 = "SELECT * FROM `products` WHERE `trash` LIKE 0 ORDER BY `sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
@@ -88,7 +88,9 @@
                     
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
-                        <? if(strlen($row1['productdesc']) > 200){ echo substr($row1['productdesc'],0,200). "..."; } else { echo $row1['productdesc']; } ?>
+                        <? if(strlen($row1['productdesc']) > 150){ echo substr($row1['productdesc'],0,150). "..."; } else { echo $row1['productdesc']; } ?>
+                        <? if($row1['city'] && $row1['state']){ 
+							echo "<br /><small class=\"muted\"><img src=\"" .$cfg['weburl']. "/img/location-pin\" /> " .$row1['city']. ", " .$row1['state']. "</small>"; } ?>
                     </div>
                 </div>
             </a>

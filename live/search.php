@@ -19,20 +19,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script src="<?php echo $cfg['weburl']; ?>/js/jquery.masonry.min.js"></script>
-<script type="application/javascript">
-
-	$(function(){
-	  $('#prod-container').masonry({
-		// options
-		itemSelector : '.prod-item',
-		columnWidth : 310
-	  });
-	});
-
-</script>
-
   </head>
 
   <body>
@@ -102,9 +88,9 @@
                     
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
-                        <strong><? echo $row1['companyname']; ?></strong>
-                        <br />
-                        <? echo $row1['productdesc']; ?>
+                        <? if(strlen($row1['productdesc']) > 150){ echo substr($row1['productdesc'],0,150). "..."; } else { echo $row1['productdesc']; } ?>
+                        <? if($row1['city'] && $row1['state']){ 
+							echo "<br /><small class=\"muted\"><img src=\"" .$cfg['weburl']. "/img/location-pin\" /> " .$row1['city']. ", " .$row1['state']. "</small>"; } ?>
                     </div>
                 </div>
             </a>
@@ -153,5 +139,23 @@
         })
       }(window.jQuery)
     </script>
+        <script src="js/jquery.masonry.min.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel();
+          
+          $('#prod-container').masonry({
+            // options
+            itemSelector : '.prod-item',
+            columnWidth : 310
+          });
+          
+          setTimeout(function() {$("#prod-container").masonry( 'reload' ); }, 100);
+        })
+      }(window.jQuery)
+    </script>
+
   </body>
 </html>

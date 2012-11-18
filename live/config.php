@@ -28,6 +28,13 @@
 		session_start();
 		setcookie("ShopStartup",session_id(), 0, '/', '.shopstartup.co');
 		
+		$query0 = "INSERT INTO `sessions` SET 
+					`session` = '" .session_id(). "', 
+					`datetime` = '" .$cfg['sqltime']. "', 
+					`ipaddr` = '" .$_SERVER['REMOTE_ADDR']. "', 
+					`useragent` = '" .$_SERVER['USERAGENT_STRING']. "'";
+		$db['link']->query($query1);
+		
 	}
 	
 	require 'nav.php';
