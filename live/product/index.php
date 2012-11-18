@@ -120,7 +120,7 @@
                	</div>
                 <div class="span8">
                 	<h1><? echo $row1['productname']; ?></h1>
-                    <em>by</em> <h4><? echo $row1['companyname']; ?></h4>
+                    <h4><small><em>by</em></small> <? echo $row1['companyname']; ?></h4>
                     <p><? echo $row1['productdesc']; ?></p>
                 </div>
             
