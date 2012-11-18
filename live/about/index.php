@@ -62,9 +62,16 @@
     <div class="container marketing">
     
     <div class="container">
-    	<h2><strong>About Us</strong></h2>
+    	<h2>About Us / <strong>Our Team</strong></h2>
         
-        
+        <div class="row">
+        	<h4>We are entrepreneurs supporting other entrepreneurs.<br />
+            	Join our movement to Shop Startup on this and future holidays.</h4>
+            <h4>Here's how we're shopping startup this holiday season:</h4>
+            <p><strong>Julie (Chief Chief):</strong> I pledge 15%</p>
+            <p><strong>Julie (Chief Chief):</strong> I pledge 15%</p>
+            
+        </div>
         
     </div>
 
