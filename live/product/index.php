@@ -65,9 +65,6 @@
         <div class="item active">
           <img src="<?= $row1['bannerimg']; ?>" alt="">
           <div class="container">
-            <div class="carousel-caption">
-              <h1 style="color:#000;"><? echo $row1['companyname']; ?></h1>
-            </div>
           </div>
         </div>
       </div>
@@ -92,7 +89,8 @@
 
     			<div class="span4">
                   <div class="prod-item">
-                        <img src="<? echo $row1['image']; ?>" class="prod-image" /><br />
+                        <img src="<? echo $row1['image']; ?>" class="prod-image"
+                        <? if($row1['bannerimg']){ ?> style="position:relative; top:-50px;"<? } ?> /><br />
                         <div class="prod-itemlabel" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <?php if($row1['price'] != 0.00){ ?><h1 itemprop="price">$ <?php echo number_format($row1['price'],2); ?></h1><?php } ?>
                             
