@@ -1,6 +1,6 @@
-<?php require 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+<?php require 'config.php'; ?>
   <head>
     <meta charset="utf-8">
     <title>Shop Startup</title>
