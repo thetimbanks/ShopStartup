@@ -1,6 +1,6 @@
-<?php require 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+<?php require 'config.php'; ?>
   <head>
     <meta charset="utf-8">
     <title>Shop Startup</title>
@@ -9,36 +9,29 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php echo $cfg['weburl']; ?>/css/style.css" rel="stylesheet">
     
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
- <!--   <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script src="js/jquery.masonry.min.js"></script>
-    <script>
-    
-        $(function(){
-          $('#container').masonry({
-            // options
-            itemSelector : '.item',
-            columnWidth : 310
-          });
-        });
-    
-    </script>
+	<script src="<?php echo $cfg['weburl']; ?>/js/jquery.masonry.min.js"></script>
+<script type="application/javascript">
+
+	$(function(){
+	  $('#prod-container').masonry({
+		// options
+		itemSelector : '.prod-item',
+		columnWidth : 310
+	  });
+	});
+
+</script>
 
   </head>
 
@@ -51,7 +44,7 @@
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     
     <div class="centered">
-    	<img src="img/logo.png" width="450" height="100" />
+    	<img src="<?php echo $cfg['weburl']; ?>/img/logo.png" width="450" height="100" />
     </div>
     
     <div class="container navbar-wrapper">
@@ -66,7 +59,7 @@
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="<? echo $cfg['weburl']; ?>">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -82,6 +75,7 @@
                   <li><a href="#">One more separated link</a></li>-->
                 </ul>
               </li>
+              <li><a href="<? echo $cfg['weburl']; ?>/businesses">For Startups</a></li>
               <li><a href="#about">About Us</a></li>
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
             </ul>
@@ -135,21 +129,32 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-        <div class="centered">
+    
+    	<h2><strong>Featured Products</strong></h2>
+        
+        <div class="centered clearfix">
             <div id="prod-container">
             
             <?php
             
-				$query1 = "SELECT * FROM `products` ORDER BY `dtadded` DESC";
+				$query1 = "SELECT * FROM `products` ORDER BY `sort` ASC";
 				if($result1 = $db['link']->query($query1)){
             		while($row1 = $result1->fetch_array(MYSQLI_ASSOC)){
             ?>
             
-                <div class="prod-item">image
+            <a href="<? echo $cfg['weburl']; ?>/product/?id=<? echo $row1['id']; ?>">
+                <div class="prod-item">
+                
+                	<img src="<? echo $row1['image']; ?>" width="290" class="prod-image" />
+                    
                     <div class="prod-itemlabel">
                         <h4><? echo $row1['productname']; ?></h4>
+                        <strong><? echo $row1['companyname']; ?></strong>
+                        <br />
+                        <? echo $row1['productdesc']; ?>
                     </div>
                 </div>
+            </a>
             
             <?php
 					}
@@ -159,60 +164,6 @@
             </div>
         </div>
 
-    	<div class="spacer"></div>
-    
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="img/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="img/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="img/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
