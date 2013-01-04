@@ -73,15 +73,15 @@
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepone.png">
           <h2><strong>Tell us about your products.</strong></h2><h4><em>(We'll give you the form.)</em></h4>
-          <p><a class="btn" href="<?= $cfg['weburl']; ?>/files/companyproductform.pdf" target="_new">Download &raquo;</a></p>
+          <p><a class="btn" href="<?= $cfg['weburl']; ?>/files/companyproductform.pdf" target="_new">Go to the form &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/steptwo.png">
-          <h2><strong>Install our tracker.</strong></h2><h4><em>(We've got to make money too!)</em></h4>
+          <h2><strong>Install our tracker.</strong></h2><h3><em>(We only make money when you do!)</em></h3>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepthree.png">
-          <h2><strong>There isn't one!</strong></h2><h4><em>(Unless you need our help.)</em></h4>
+          <h2><strong>There isn't one!</strong></h2><h3><em>(Unless you need our help.)</em></h3>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
