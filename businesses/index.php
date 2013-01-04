@@ -72,7 +72,7 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" src="<? echo $cfg['weburl']; ?>/img/steps/stepone.png">
-          <h2><strong>Tell us about your products.</strong></h2><h4><em>(We'll give you the form.)</em></h4>
+          <h2><strong>Tell us about your products.</strong></h2><h3><em>(We'll give you the form.)</em></h3>
           <p><a class="btn" href="<?= $cfg['weburl']; ?>/files/companyproductform.pdf" target="_new">Go to the form &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
