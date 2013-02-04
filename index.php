@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Shop Startup - Coming Soon!</title>
+    <title>Startup Commons - Coming Soon!</title>
     <meta name="description" content="">
     <meta name="keywords" content="" />
 
