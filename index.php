@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="span12">
                     <div class="content">
-                        <img src="img/logo.png" width="450" height="100" />
+                        <img src="img/logo.png" width="416" height="68" />
                         <p>Startup Commons is launching soon!<br />
                         Leave us your email below, and we’ll notify you the minute we open the doors.</p>
                         <?php
