@@ -44,8 +44,8 @@
                 <div class="span12">
                     <div class="content">
                         <img src="img/logo.png" width="450" height="100" />
-                        <h1>Startup Commons is launching soon!<br />
-                        Leave us your email below, and we’ll notify you the minute we open the doors.</h1>
+                        <p>Shop Startup is launching soon!<br />
+                        Leave us your email below, and we’ll notify you the minute we open the doors.</p>
                         <?php
                         	if($_POST['email']){
                         	
@@ -57,7 +57,7 @@
                         
                         	} else {
                         ?>
-                      <form action="#" class="form-horizontal" method="post">
+                        <form action="#" class="form-horizontal" method="post">
                             <input type="email" name="email" placeholder="Enter your email" class="input-large" />
                             <input type="submit" value="Notify me!" class="btn btn-large" />
                         </form>
