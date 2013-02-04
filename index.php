@@ -49,7 +49,7 @@
                         <?php
                         	if($_POST['email']){
                         	
-                            	require_once 'live/config.php';
+                            	require_once 'startupweekend/config.php';
                                 $query1 = "INSERT INTO `landing` SET `email` = '" .addslashes($_POST['email']). "', `datetime` = '" .$cfg['sqltime']. "'";
                                 $db['link']->query($query1);
                                 
