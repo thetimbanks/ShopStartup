@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Startup Commons - Coming Soon!</title>
+    <title>The Startup Commons - Coming Soon!</title>
     <meta name="description" content="">
     <meta name="keywords" content="" />
 
@@ -44,7 +44,7 @@
                 <div class="span12">
                     <div class="content">
                         <img src="img/logo.png" width="416" height="68" />
-                        <p>Startup Commons is launching soon!<br />
+                        <p>The Startup Commons is launching soon!<br />
                         Leave us your email below, and we’ll notify you the minute we open the doors.</p>
                         <?php
                         	if($_POST['email']){
