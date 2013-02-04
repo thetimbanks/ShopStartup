@@ -44,7 +44,7 @@
                 <div class="span12">
                     <div class="content">
                         <img src="img/logo.png" width="450" height="100" />
-                        <p>Shop Startup is launching soon!<br />
+                        <p>Startup Commons is launching soon!<br />
                         Leave us your email below, and we’ll notify you the minute we open the doors.</p>
                         <?php
                         	if($_POST['email']){
