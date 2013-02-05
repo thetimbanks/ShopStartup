@@ -65,9 +65,9 @@
 							}
 						?>
                         <p>
-                            <a href="http://twitter.com/shopstartup" class="sb circle twitter mytooltip" title="Twitter" target="_blank">Twitter</a>
-                            <a href="http://facebook.com/shopstartup" class="sb circle facebook mytooltip" title="Facebook" target="_blank">Facebook</a>
-                            <a href="http://pinterest.com/shopstartup" class="sb circle pinterest mytooltip" title="Pinterest" target="_blank">Pinterest</a>
+                            <a href="http://twitter.com/startup_commons" class="sb circle twitter mytooltip" title="Twitter" target="_blank">Twitter</a>
+                            <a href="http://facebook.com/startupcommons" class="sb circle facebook mytooltip" title="Facebook" target="_blank">Facebook</a>
+                            <!--<a href="http://pinterest.com/shopstartup" class="sb circle pinterest mytooltip" title="Pinterest" target="_blank">Pinterest</a>-->
                         </p>
                     </div>
                 </div>
